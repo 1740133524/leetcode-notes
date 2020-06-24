@@ -26,6 +26,8 @@
 
 ## 分析
 
+### 第一种
+
 看到 O(log(m + n))第一反应就是二分。
 
 找中位数就是找中间一个或两个数，假设，现在要找第m个数。
@@ -43,7 +45,23 @@
 * m/2大于其中一个数组的个数，那么直接将这个数组m/2调整为此数组的最后一个数。
 * 有一个数组全部都小于中位数，就直接从另一个的数组找对应剩下的数即可
 
+时间复杂度为O(log（m+n））
+
+### 第二种
+
+如果第m个数是中位数，可以将两个数组进行分割，比如：第一个数组分割出前i个数，那么第二个数组就分割出j=m-i个数。
+
+因为同组是有序的，所以有3种可能：
+
+* nums1[i] <= nums2[j+1] 并且 nums2[i] < nums1[i+1], 这样就找到了中位数
+* nums1[i] > nums2[j+1], 这就表示第一个数组中的数选大了，第二个数组选小了，就把i缩小，相对应的j会变大
+* nums2[j] > nums1[i+1]，和上面同理，缩小j，放大i
+
+可以根据两个数组中小的那个数组去寻找i，这样的时间复杂度就为O(log（min（m，n））
+
 ## 代码
+
+### 第一种
 
 	class Solution {
 	public:
@@ -117,6 +135,56 @@
 	            }
 	            return double(nums1[n1l] < nums2[n2l] ? nums1[n1l] : nums2[n2l]);
 	        }
+	    }
+	};
+
+### 第二种
+
+	class Solution {
+	public:
+	    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+	        vector<int> n1 = nums1.size() <= nums2.size() ? nums1 : nums2;
+	        vector<int> n2 = nums1.size() > nums2.size() ? nums1 : nums2;
+	        int n12s = nums1.size() + nums2.size();
+	        int n1s = n1.size();
+	        int n2s = n2.size();
+	        int n1l = 0;
+	        int n1r = n1s-1;
+	        while(n1l <= n1r){ 
+	            int n1m = (n1l+n1r) / 2;
+	            int n2m = (n12s+1) / 2 - n1m - 2;
+	            int n1mv = n1m+1 < n1s ? n1[n1m+1] : n2[n2m+1];
+	            int n2mv = n2m < 0 ? n1[n1m] : n2[n2m];
+	            int lmax = max(n1[n1m], n2mv);
+	            int rmin = min(n1mv, n2[n2m+1]);
+	            
+	            if(n1[n1m] <= n2[n2m+1] && n2mv <= n1mv){
+	                if(n12s % 2 == 0) return double(lmax + rmin) / 2;
+	                else return max(n1[n1m], n2mv);
+	            }
+	            else if(n1[n1m] > n2[n2m+1]){
+	                n1r = n1m-1;
+	            }
+	            else{
+	                n1l = n1m+1;
+	            }
+	        }
+	        // 当两个数组一样长时，并且第一个数组最大的值小于第二个数组
+	        if(n1s == n2s){
+	            return double(n1[n1.size()-1] + n2[0])/2;
+	        }
+	        // 当中位数（偶数情况下的第一个数）小于第一个数组最小的数时
+	        if(n1r < 0){
+	            int a1, a2;
+	            //如果没有上一段判断if(n1s == n2s)，这里的n2[n12s/2]就有可能报错，因为可能没有n12s/2这个数
+	            if(n12s % 2 == 0) return double(n2[n12s/2-1] + min(n2[n12s/2], n1s > 0 ? n1[0] : n2[n12s/2])) / 2;
+	            else return n2[n12s/2];
+	        }
+	        else{ // 当中位数（偶数情况下的第一个数）大于第一个数组最大的数时
+	            if(n12s % 2 == 0) return double(n2[n12s/2-1-n1s] + n2[n12s/2-n1s]) / 2;
+	            else return n2[n12s/2-n1s];
+	        }
+	        return 0;
 	    }
 	};
 
