@@ -25,3 +25,17 @@
 	* https://leetcode-cn.com/problems/largest-rectangle-in-histogram/
 * 33. 搜索旋转排序数组
 	* https://leetcode-cn.com/problems/search-in-rotated-sorted-array/
+
+
+* 85. 最大矩形
+	* https://leetcode-cn.com/problems/maximal-rectangle/
+* 34. 在排序数组中查找元素的第一个和最后一个位置
+	* https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+* 123. 买卖股票的最佳时机 III
+	* https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/
+* 39. 组合总和
+	* https://leetcode-cn.com/problems/combination-sum/
+* 126. 单词接龙 II
+	* https://leetcode-cn.com/problems/word-ladder-ii/
+* 40. 组合总和 II
+	* https://leetcode-cn.com/problems/combination-sum-ii/
