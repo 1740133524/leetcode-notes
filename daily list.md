@@ -39,3 +39,17 @@
 	* https://leetcode-cn.com/problems/word-ladder-ii/
 * 40. 组合总和 II
 	* https://leetcode-cn.com/problems/combination-sum-ii/
+
+
+* 128. 最长连续序列
+	* https://leetcode-cn.com/problems/longest-consecutive-sequence/
+* 48. 旋转图像
+	* https://leetcode-cn.com/problems/rotate-image/
+* 154. 寻找旋转排序数组中的最小值 II
+	* https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/
+* 54. 螺旋矩阵
+	* https://leetcode-cn.com/problems/spiral-matrix/
+* 381. O(1) 时间插入、删除和获取随机元素 - 允许重复
+	* https://leetcode-cn.com/problems/insert-delete-getrandom-o1-duplicates-allowed/
+* 55. 跳跃游戏
+	* https://leetcode-cn.com/problems/jump-game/
