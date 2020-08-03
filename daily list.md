@@ -53,3 +53,17 @@
 	* https://leetcode-cn.com/problems/insert-delete-getrandom-o1-duplicates-allowed/
 * 55. 跳跃游戏
 	* https://leetcode-cn.com/problems/jump-game/
+
+
+* 689. 三个无重叠子数组的最大和
+	* https://leetcode-cn.com/problems/maximum-sum-of-3-non-overlapping-subarrays/
+* 56. 合并区间
+	* https://leetcode-cn.com/problems/merge-intervals/
+* 719. 找出第 k 小的距离对
+	* https://leetcode-cn.com/problems/find-k-th-smallest-pair-distance/
+* 59. 螺旋矩阵 II
+	* https://leetcode-cn.com/problems/spiral-matrix-ii/
+* 768. 最多能完成排序的块 II
+	* https://leetcode-cn.com/problems/max-chunks-to-make-sorted-ii/
+* 62. 不同路径
+	* https://leetcode-cn.com/problems/unique-paths/
