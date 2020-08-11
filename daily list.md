@@ -67,3 +67,16 @@
 	* https://leetcode-cn.com/problems/max-chunks-to-make-sorted-ii/
 * 62. 不同路径
 	* https://leetcode-cn.com/problems/unique-paths/
+
+* 782. 变为棋盘
+	* https://leetcode-cn.com/problems/transform-to-chessboard/
+* 63. 不同路径 II
+	* https://leetcode-cn.com/problems/unique-paths-ii/
+* 891. 子序列宽度之和
+	* https://leetcode-cn.com/problems/sum-of-subsequence-widths/
+* 64. 最小路径和
+	* https://leetcode-cn.com/problems/minimum-path-sum/
+* 1074. 元素和为目标值的子矩阵数量
+	* https://leetcode-cn.com/problems/number-of-submatrices-that-sum-to-target/
+* 73. 矩阵置零
+	* https://leetcode-cn.com/problems/set-matrix-zeroes/
