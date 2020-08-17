@@ -80,3 +80,15 @@
 	* https://leetcode-cn.com/problems/number-of-submatrices-that-sum-to-target/
 * 73. 矩阵置零
 	* https://leetcode-cn.com/problems/set-matrix-zeroes/
+
+
+* 74. 搜索二维矩阵
+	* https://leetcode-cn.com/problems/search-a-2d-matrix/
+* 1157. 子数组中占绝大多数的元素
+	* https://leetcode-cn.com/problems/online-majority-element-in-subarray/
+* 75. 颜色分类
+	* https://leetcode-cn.com/problems/sort-colors/
+* 1330. 翻转子数组得到最大的数组值
+	* https://leetcode-cn.com/problems/reverse-subarray-to-maximize-array-value/
+* 78. 子集
+	* https://leetcode-cn.com/problems/subsets/
