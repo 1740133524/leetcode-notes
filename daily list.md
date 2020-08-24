@@ -92,3 +92,17 @@
 	* https://leetcode-cn.com/problems/reverse-subarray-to-maximize-array-value/
 * 78. 子集
 	* https://leetcode-cn.com/problems/subsets/
+
+
+* 1499. 满足不等式的最大值
+	* https://leetcode-cn.com/problems/max-value-of-equation/
+* 79. 单词搜索
+	* https://leetcode-cn.com/problems/word-search/
+* 面试题 17.19. 消失的两个数字
+	* https://leetcode-cn.com/problems/missing-two-lcci/
+* 80. 删除排序数组中的重复项 II
+	* https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/
+* 面试题 17.21. 直方图的水量
+	* https://leetcode-cn.com/problems/volume-of-histogram-lcci/
+* 81. 搜索旋转排序数组 II
+	* https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/	
